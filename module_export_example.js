@@ -1,11 +1,14 @@
-const person = {
+exports.person = {
     name:"Jaydeep",
     age:33,
     city:"Gandhinagar",
-    intro:()=>{
-        return `My name is ${person.name} & my age is:${person.age}` // here {this.name} or {this.age} will not work because of arrow function
+    intro:function(){  
+        return `My name is ${this.name} & my age is:${this.age}` // here {this.name} or {this.age} will not work if you use an  arrow function
     }
-    
 }
 
-module.exports =  person;
+exports.func = ()=>{
+    return "I am a function";
+}
+
+exports.country = "India";
