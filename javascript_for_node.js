@@ -42,5 +42,24 @@ console.log(doubleAge);
 
   demoFunc("Jayd",33,10,20,30); // Here the function will consider "Jayd" as "name" & "33" as "age" , & for the rest of the values it will store in args(array)
 
+  // ================================= Array destruture ============================================
+
+    const myArr = ["Kevin","male","Newyork"];
+
+    const [name,gender,city] = myArr;  // destruture  array and assign values to individual variables
+
+    console.log(name,gender,city);
+
+ // ================================== Object destruture ============================================
+
+     const obj = {
+       salary:25000,
+       department:"R&D",
+       company:"ANZ"
+     };
+
+     const {salary,department,company} = obj; //destruture  object and assign values to individual variables , note that the variable names must be same as object keys
+     console.log(salary,department,company);
+
 
   
