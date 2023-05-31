@@ -1,7 +1,2 @@
-const http = require('http');  // starter file 
-
-const server = http.createServer((req,res)=>{
-   res.end("Hello from new server");
-});
-
-server.listen(3001);
+const person = require('./module_export_example');
+console.log(person.age , person.city , person.name);
