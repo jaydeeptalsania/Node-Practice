@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jaydeeptalsania/Node-Practice/issues"
   },
-  "homepage": "https://github.com/jaydeeptalsania/Node-Practice#readme"
+  "homepage": "https://github.com/jaydeeptalsania/Node-Practice#readme",
+  "dependencies": {
+    "superagent": "^8.0.9"
+  }
 }
