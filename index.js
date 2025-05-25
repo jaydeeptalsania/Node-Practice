@@ -1,7 +1,11 @@
-const http = require('http');
+const express = require('express');
+const app = express();
+const PORT = 3001;
 
-const server = http.createServer((req,res)=>{
-   res.end("Hello from new server 3310");
+app.get('/',(req,res)=>{
+  res.status(200).send("Hello from express");
 });
 
-server.listen(3001);
+app.listen(PORT,()=>{
+   console.log(`Express is running on port:-${PORT}`);
+});
